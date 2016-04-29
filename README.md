@@ -1,6 +1,8 @@
 chatwork-to-slack
 -----------------
 
+[![Build Status](https://img.shields.io/travis/pine613/chatwork-to-slack/master.svg)](https://travis-ci.org/pine613/chatwork-to-slack)
+
 **EXPERIMENTAL**
 
 ## Why ???
