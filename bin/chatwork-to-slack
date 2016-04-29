@@ -32,6 +32,6 @@ co(function *() {
 
     yield database.disconnect()
   } catch (e) {
-    console.log(e)
+    console.error(e)
   }
 })
