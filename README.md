@@ -1,4 +1,6 @@
-# chatwork-to-slack [![Build Status](https://img.shields.io/travis/pine613/chatwork-to-slack/master.svg?style=flat-square)](https://travis-ci.org/pine613/chatwork-to-slack)
+# chatwork-to-slack [![Build Status](https://img.shields.io/travis/pine613/chatwork-to-slack/master.svg?style=flat-square)](https://travis-ci.org/pine613/chatwork-to-slack) [![Dependency Status](https://img.shields.io/david/pine613/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine613/chatwork-to-slack) [![devDependency Status](https://img.shields.io/david/dev/pine613/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine613/chatwork-to-slack#info=devDependencies)
+
+
 
 > Transfer chat messages from ChatWork to Slack
 
