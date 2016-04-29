@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+'use strict'
+
+const co = require('co')
+
+const ChatWork = require('../lib/chatwork')
+const Database = require('../lib/database')
+const Slack = require('../lib/slack')
+const argv = require('../lib/argv')
+const util = require('../lib/util')
+
+const database = new Database({url: argv['mongodb-url']})
+const chatwork = new ChatWork({token: argv['chatwork-api-token']})
+const slack = new Slack({
+  webhookUrl: argv['slack-webhook-url'],
+  channel: argv['slack-channel'],
+  iconUrl: argv['slack-icon-url']
+})
+
+co(function *() {
+  try {
+    const sinceDateTime = new Date(argv['since-datetime'])
+    const roomId = argv['chatwork-room-id']
+    let {body: messages} = yield chatwork.request(`/rooms/${roomId}/messages?force=1`)
+    messages = util.filterSinceDateTime(messages, sinceDateTime)
+
+    yield database.connect()
+
+    const notExistedMessages = yield database.filterIfNotExist(messages)
+    yield slack.notifyMessages(notExistedMessages)
+    yield database.save(notExistedMessages)
+
+    yield database.disconnect()
+  } catch (e) {
+    console.log(e)
+  }
+})

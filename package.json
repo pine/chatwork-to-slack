@@ -1,0 +1,49 @@
+{
+  "name": "chatwork-to-slack",
+  "version": "0.1.0",
+  "description": "Transfer chat messages from ChatWork to Slack",
+  "main": "bin/chatwork-to-slack",
+  "bin": "bin/chatwork-to-slack",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "*.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "co": "^4.6.0",
+    "got": "^6.3.0",
+    "mongodb": "^2.1.18",
+    "node-slackr": "^0.1.4",
+    "promise-retry": "^1.1.0",
+    "throat": "^2.0.2",
+    "yargs": "^4.6.0"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "nock": "^8.0.0",
+    "proxyquire": "^1.7.4",
+    "sinon": "^1.17.3",
+    "xo": "^0.14.0"
+  },
+  "engines" : {
+    "node" : ">=6.0.0"
+  },
+  "engineStrict" : true,
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "camelcase": 0
+    }
+  },
+  "author": {
+    "name": "Pine Mizune",
+    "email": "pinemz@gmail.com",
+    "url": "https://github.com/pine613"
+  },
+  "license": "MIT"
+}
