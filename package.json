@@ -1,6 +1,6 @@
 {
   "name": "chatwork-to-slack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transfer chat messages from ChatWork to Slack",
   "main": "bin/chatwork-to-slack",
   "bin": "bin/chatwork-to-slack",
@@ -29,10 +29,10 @@
     "sinon": "^1.17.3",
     "xo": "^0.15.0"
   },
-  "engines" : {
-    "node" : ">=6.0.0"
+  "engines": {
+    "node": ">=6.0.0"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "xo": {
     "semicolon": false,
     "space": 2,
