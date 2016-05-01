@@ -34,6 +34,9 @@ $ chatwork-to-slack \
 The command is not deamonized.
 You can use `chatwork-to-slack` along with Cron.
 
+## Example
+- [Emilia](https://github.com/pine613/Emilia) (example on OpenShift)
+
 ## See also
 - [チャットワークAPIを限定プレビュー公開します！](http://blog-ja.chatwork.com/2013/11/api-preview.html) (Japanese)
 - [チャットワークAPIドキュメント](http://developer.chatwork.com/ja/index.html) (Japanese)
