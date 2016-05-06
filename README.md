@@ -1,5 +1,9 @@
 # chatwork-to-slack
-[![npm version](https://img.shields.io/npm/v/chatwork-to-slack.svg?style=flat-square)](https://www.npmjs.com/package/chatwork-to-slack) [![Build Status](https://img.shields.io/travis/pine613/chatwork-to-slack/master.svg?style=flat-square)](https://travis-ci.org/pine613/chatwork-to-slack) [![Dependency Status](https://img.shields.io/david/pine613/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine613/chatwork-to-slack) [![devDependency Status](https://img.shields.io/david/dev/pine613/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine613/chatwork-to-slack#info=devDependencies) [![MIT](https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/chatwork-to-slack.svg?style=flat-square)](https://www.npmjs.com/package/chatwork-to-slack)
+[![Build Status](https://img.shields.io/travis/pine/chatwork-to-slack/master.svg?style=flat-square)](https://travis-ci.org/pine/chatwork-to-slack)
+[![Dependency Status](https://img.shields.io/david/pine/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine/chatwork-to-slack)
+[![devDependency Status](https://img.shields.io/david/dev/pine/chatwork-to-slack.svg?style=flat-square)](https://david-dm.org/pine/chatwork-to-slack#info=devDependencies)
+[![MIT](https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 > Transfer chat messages from ChatWork to Slack
 
@@ -35,7 +39,7 @@ The command is not deamonized.
 You can use `chatwork-to-slack` along with Cron.
 
 ## Example
-- [Emilia](https://github.com/pine613/Emilia) (example on OpenShift)
+- [Emilia](https://github.com/pine/Emilia) (example on OpenShift)
 
 ## See also
 - [チャットワークAPIを限定プレビュー公開します！](http://blog-ja.chatwork.com/2013/11/api-preview.html) (Japanese)

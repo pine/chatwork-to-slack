@@ -40,10 +40,18 @@
       "camelcase": 0
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pine/chatwork-to-slack"
+  },
+  "bugs": {
+    "url": "https://github.com/pine/chatwork-to-slack/issues"
+  },
+  "homepage": "https://github.com/pine/chatwork-to-slack",
   "author": {
     "name": "Pine Mizune",
     "email": "pinemz@gmail.com",
-    "url": "https://github.com/pine613"
+    "url": "https://github.com/pine"
   },
   "license": "MIT"
 }
