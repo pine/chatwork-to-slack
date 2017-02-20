@@ -7,8 +7,6 @@
 
 > Transfer chat messages from ChatWork to Slack
 
-**EXPERIMENTAL**
-
 ## Why ???
 - ChatWork is not user friendly (especially for engineers)
 - I don't wish to launch many chat tools
