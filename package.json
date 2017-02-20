@@ -19,16 +19,16 @@
     "mongodb": "^2.1.18",
     "node-slackr": "^0.1.4",
     "promise-retry": "^1.1.0",
-    "throat": "^2.0.2",
-    "yargs": "^4.6.0"
+    "throat": "^3.0.0",
+    "yargs": "^6.6.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",
-    "nock": "^8.0.0",
+    "nock": "^9.0.0",
     "p-timeout": "^1.0.0",
     "proxyquire": "^1.7.4",
     "sinon": "^1.17.3",
-    "xo": "^0.15.0"
+    "xo": "^0.17.0"
   },
   "engines": {
     "node": ">=6.0.0"
