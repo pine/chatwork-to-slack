@@ -1,6 +1,6 @@
 {
   "name": "chatwork-to-slack",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Transfer chat messages from ChatWork to Slack",
   "main": "bin/chatwork-to-slack",
   "bin": "bin/chatwork-to-slack",
