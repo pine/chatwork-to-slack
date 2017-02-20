@@ -38,6 +38,13 @@ $ chatwork-to-slack \
 The command is not deamonized.
 You can use `chatwork-to-slack` along with Cron.
 
+## Test
+If you want to run test in local computer, you should launch MongoDB.
+
+```
+$ npm test
+```
+
 ## Example
 - [Emilia](https://github.com/pine/Emilia) (example on OpenShift)
 
