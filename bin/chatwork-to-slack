@@ -35,3 +35,5 @@ co(function *() {
     console.error(e)
   }
 })
+
+// vim: se et ts=2 sw=2 sts=2 ft=javascript :
