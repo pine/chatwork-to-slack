@@ -51,6 +51,7 @@ $ npm test
 ## See also
 - [チャットワークAPIを限定プレビュー公開します！](http://blog-ja.chatwork.com/2013/11/api-preview.html) (Japanese)
 - [チャットワークAPIドキュメント](http://developer.chatwork.com/ja/index.html) (Japanese)
+- [チャットワークAPIバージョンアップのお知らせ](https://help.chatwork.com/hc/ja/articles/115000019401) (Japanese)
 
 ## License
 MIT License
