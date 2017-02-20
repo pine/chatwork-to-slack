@@ -59,11 +59,45 @@ test.serial('save', async t => {
   t.is(savedMessages[0].body, 'body')
 })
 
+test.serial('save (string id)', async t => {
+  const database = new Database({})
+  database.db = t.context.db
+
+  const messages = [{message_id: '100', body: 'body'}]
+  await database.save(messages)
+
+  const collection = t.context.db.collection('messages')
+  const savedMessages = await collection.find({message_id: '100'}).toArray()
+  t.is(savedMessages.length, 1)
+  t.truthy(savedMessages[0]._id)
+  t.is(savedMessages[0].message_id, '100')
+  t.is(savedMessages[0].body, 'body')
+})
+
 test.serial('filterIfNotExist', async t => {
   const database = new Database({})
   database.db = t.context.db
 
   const messages = [
+    {message_id: 100, body: 'body_100'},
+    {message_id: '100', body: 'body_100_str'},
+    {message_id: 101, body: 'body_101'}
+  ]
+  const collection = t.context.db.collection('messages')
+  await collection.insertOne(messages[0])
+
+  const notExistedMessages = await database.filterIfNotExist(messages)
+  t.is(notExistedMessages.length, 1)
+  t.is(notExistedMessages[0].message_id, 101)
+  t.is(notExistedMessages[0].body, 'body_101')
+})
+
+test.serial('filterIfNotExist (string id)', async t => {
+  const database = new Database({})
+  database.db = t.context.db
+
+  const messages = [
+    {message_id: '100', body: 'body_100_str'},
     {message_id: 100, body: 'body_100'},
     {message_id: 101, body: 'body_101'}
   ]
